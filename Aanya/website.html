@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Passkey Validation</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+  <script>
+    function checkPasskey() {
+      var input = prompt("Enter the passkey:");
+      if (input === "U472BMT" || input === "u472bmt") {
+        window.location.href = "congratulations.html";
+      } else {
+        alert("Incorrect answer");
+      }
+    }
+  </script>
+</head>
+<body>
+  <button onclick="checkPasskey()">Click here</button>
+</body>
+</html>

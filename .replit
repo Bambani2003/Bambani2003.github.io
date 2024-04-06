@@ -1,0 +1,4 @@
+run = "bash index.html"
+
+[nix]
+channel = "stable-22_05"

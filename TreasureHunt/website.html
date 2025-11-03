@@ -19,7 +19,7 @@
   <script>
     function checkPasskey() {
       var input = prompt("Enter the passkey:");
-      if (input === "U472BMT" || input === "u472bmt") {
+      if (input.toLowerCase() === "u472bmt") {
         window.location.href = "congratulations.html";
       } else {
         alert("Incorrect answer");
@@ -31,3 +31,4 @@
   <button onclick="checkPasskey()">Click here</button>
 </body>
 </html>
+
